@@ -1,0 +1,44 @@
+# Node.js / NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Build / Dist
+dist/
+build/
+out/
+.cache/
+.temp/
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# Others
+coverage/
+*.bak
+*.tmp
+
+# Hosting / Deploy
+.firebase/
+.vercel/
+.netlify/
