@@ -1,0 +1,8 @@
+# robots.txt
+
+# Allow to track all the website
+User-agent: *
+Allow: /
+
+# Indicate where to find sitemap
+Sitemap: https://www.sistemaetr.com/sitemap.xml
