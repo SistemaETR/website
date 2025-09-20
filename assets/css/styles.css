@@ -5,7 +5,8 @@
 :root {
     --bs-dark: #121212;
     --bs-dark-rgb: 18, 18, 18;
-    --primary-color: #D32F2F; /* Rojo ETR */
+    --primary-color: #D32F2F;
+    /* Rojo ETR */
     --font-heading: 'Zen Dots', sans-serif;
     --font-body: 'Roboto', sans-serif;
 }
@@ -67,11 +68,14 @@ body {
 }
 
 .google-play-badge {
-    height: 80px; /* Ajusta el tamaño del badge de Google Play */
+    height: 80px;
+    /* Ajusta el tamaño del badge de Google Play */
     transition: transform 0.2s ease-in-out;
 }
+
 .google-play-badge:hover {
-    transform: scale(1.05); /* Efecto sutil al pasar el cursor */
+    transform: scale(1.05);
+    /* Efecto sutil al pasar el cursor */
 }
 
 /* --- Estilos para los iconos de la sección de características --- */
@@ -81,4 +85,30 @@ body {
 
 .fs-1 {
     font-size: 3rem !important;
+}
+
+/* --- Estilos para el botón flotante del idioma --- */
+#language-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1050;
+    border: 1px solid #495057; /* Borde sutil para que no se pierda */
+    padding: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out;
+    background-color: #343a40; /* <-- Color oscuro, como la navbar */
+}
+
+#language-switcher:hover {
+    transform: scale(1.1);
+}
+
+#language-switcher img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 6px;
 }
