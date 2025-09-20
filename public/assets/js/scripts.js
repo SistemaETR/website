@@ -1,7 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Update copyright year to the current year
-    const yearSpan = document.getElementById('copyright-year');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
+    // Function to load a component
+    function loadComponent(url, placeholderId) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                const placeholder = document.getElementById(placeholderId);
+                if (placeholder) {
+                    placeholder.innerHTML = data;
+                }
+            })
+            .catch(error => console.error('Error al cargar el componente:', error));
     }
+
+    // Load footer
+    loadComponent('footer.html', 'footer-placeholder');
 });
