@@ -16,6 +16,8 @@ The goal of this project is to provide a professional, fast, and informative onl
 
 * **Fully Responsive Design**: Looks great on desktops, tablets, and mobile devices.
 * **Bilingual Content (ES/EN)**: The content can be change between Spanish or English.
+* **SEO & Social Media Ready**: Includes a full suite of meta tags (Open Graph, Twitter Cards), a sitemap, and a detailed favicon setup for excellent search engine visibility and social sharing.
+* **Firebase Integration**: Uses Firebase Authentication for secure password reset functionality.
 
 ---
 
@@ -27,6 +29,7 @@ This project was built using a simple and lightweight stack:
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+* ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
 
 ---
 
@@ -35,20 +38,42 @@ This project was built using a simple and lightweight stack:
 The project follows a standard structure for static websites to keep content, styles, and scripts organized.
 
 ```
-/public/
+/
+├── firebase.json       (Firebase hosting config)
+├── .firebaserc         (Firebase project mapping)
+├── .gitignore          (Files to ignore for Git)
+├── LICENSE             (Project license)
+├── README.md           (This file)
 │
-├── index.html          (Main landing page)
-├── privacy.html        (Privacy Policy page)
-├── terms.html          (Terms & Conditions page)
-├── 404.html            (Custom 404 error page)
-├── robots.txt          (Instructions for web crawlers)
-├── sitemap.xml         (Site map for SEO)
+├── /images/            (Images for the README)
 │
-└── /assets/
-    ├── /css/
-    ├── /js/
-    ├── /images/
-    └── /fonts/
+└── /public/            (All static files for hosting)
+    │
+    ├── index.html          (Main landing page - ES)
+    ├── privacy.html        (Privacy Policy - ES)
+    ├── terms.html          (Terms & Conditions - ES)
+    ├── 404.html            (Custom 404 error page)
+    ├── reset-password.html (Password reset handler page)
+    ├── footer.html         (Footer component - ES)
+    ├── robots.txt          (Instructions for web crawlers)
+    ├── sitemap.xml         (Site map for SEO)
+    │
+    ├── /en/                (English language content)
+    │   ├── index.html
+    │   ├── privacy.html
+    │   ├── terms.html
+    │   └── footer.html
+    │
+    ├── /assets/
+    │   ├── /css/           (Custom styles)
+    │   ├── /js/            (Global scripts)
+    │   └── /images/        (Site images, logos, hero)
+    │
+    └── /favicon/           (All website favicons)
+        ├── favicon.ico
+        ├── apple-touch-icon.png
+        ├── site.webmanifest
+        └── ... (etc.)
 ```
 
 ---
